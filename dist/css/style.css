@@ -1,0 +1,61 @@
+.protanopia {
+  -webkit-filter: url("/accecss-filters.svg#protanopia") grayscale(0) !important;
+          filter: url("/accecss-filters.svg#protanopia") grayscale(0) !important;
+}
+
+.protanomaly {
+  -webkit-filter: url("/accecss-filters.svg#protanomaly") grayscale(0) !important;
+          filter: url("/accecss-filters.svg#protanomaly") grayscale(0) !important;
+}
+
+.deuteranopia {
+  -webkit-filter: url("/accecss-filters.svg#deuteranopia") grayscale(0) !important;
+          filter: url("/accecss-filters.svg#deuteranopia") grayscale(0) !important;
+}
+
+.deuteranomaly {
+  -webkit-filter: url("/accecss-filters.svg#deuteranomaly") grayscale(0) !important;
+          filter: url("/accecss-filters.svg#deuteranomaly") grayscale(0) !important;
+}
+
+.tritanopia {
+  -webkit-filter: url("/accecss-filters.svg#tritanopia") grayscale(0) !important;
+          filter: url("/accecss-filters.svg#tritanopia") grayscale(0) !important;
+}
+
+.tritanomaly {
+  -webkit-filter: url("/accecss-filters.svg#tritanomaly") grayscale(0) !important;
+          filter: url("/accecss-filters.svg#tritanomaly") grayscale(0) !important;
+}
+
+.achromatopsia {
+  -webkit-filter: url("/accecss-filters.svg#achromatopsia") grayscale(0) !important;
+          filter: url("/accecss-filters.svg#achromatopsia") grayscale(0) !important;
+}
+
+.achromatomaly {
+  -webkit-filter: url("/accecss-filters.svg#achromatomaly") grayscale(0) !important;
+          filter: url("/accecss-filters.svg#achromatomaly") grayscale(0) !important;
+}
+
+.grayscale {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.vision-loss-moderate {
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+}
+
+.vision-loss-severe {
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+
+.vision-blindness {
+  -webkit-filter: brightness(0);
+          filter: brightness(0);
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBZUU7RUFDQywrRUFBOEY7VUFBOUYsdUVBQThGO0NBQy9GOztBQUZBO0VBQ0MsZ0ZBQThGO1VBQTlGLHdFQUE4RjtDQUMvRjs7QUFGQTtFQUNDLGlGQUE4RjtVQUE5Rix5RUFBOEY7Q0FDL0Y7O0FBRkE7RUFDQyxrRkFBOEY7VUFBOUYsMEVBQThGO0NBQy9GOztBQUZBO0VBQ0MsK0VBQThGO1VBQTlGLHVFQUE4RjtDQUMvRjs7QUFGQTtFQUNDLGdGQUE4RjtVQUE5Rix3RUFBOEY7Q0FDL0Y7O0FBRkE7RUFDQyxrRkFBOEY7VUFBOUYsMEVBQThGO0NBQy9GOztBQUZBO0VBQ0Msa0ZBQThGO1VBQTlGLDBFQUE4RjtDQUMvRjs7QUFHRjtFQUNFLGdDQUF1QjtVQUF2Qix3QkFBdUI7Q0FDeEI7O0FBRUQ7RUFDRSwwQkFBaUI7VUFBakIsa0JBQWlCO0NBQ2xCOztBQUVEO0VBQ0UsMkJBQWtCO1VBQWxCLG1CQUFrQjtDQUNuQjs7QUFFRDtFQUNFLDhCQUFxQjtVQUFyQixzQkFBcUI7Q0FDdEIiLCJmaWxlIjoic3R5bGUuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLy8gQ3VzdG9taXplIHZlcnNpb24gb2YgQWNjZUNTUyBodHRwczovL2x1a3l2ai5naXRodWIuaW8vYWNjZWNzcy9cclxuXHJcbiRwYXRoLXRvLWFjY2Vjc3MtZmlsdGVyOiAnJztcclxuJHR5cGUtbWFwOiAoXHJcbiAgMTogJ3Byb3Rhbm9waWEnICxcclxuICAyOiAncHJvdGFub21hbHknICxcclxuICAzOiAnZGV1dGVyYW5vcGlhJyAsXHJcbiAgNDogJ2RldXRlcmFub21hbHknICxcclxuICA1OiAndHJpdGFub3BpYScgLFxyXG4gIDY6ICd0cml0YW5vbWFseScgLFxyXG4gIDc6ICdhY2hyb21hdG9wc2lhJyAsXHJcbiAgODogJ2FjaHJvbWF0b21hbHknIFxyXG4pO1xyXG5cclxuQGVhY2ggJG51bSwgJHR5cGUgaW4gJHR5cGUtbWFwIHtcclxuICAmLiN7JHR5cGV9e1xyXG4gICBmaWx0ZXI6IHVybCgnI3skcGF0aC10by1hY2NlY3NzLWZpbHRlcn0vYWNjZWNzcy1maWx0ZXJzLnN2ZyMjeyR0eXBlfScpIGdyYXlzY2FsZSgwKSAhaW1wb3J0YW50O1xyXG4gfVxyXG59XHJcblxyXG4uZ3JheXNjYWxle1xyXG4gIGZpbHRlcjogZ3JheXNjYWxlKDEwMCUpO1xyXG59XHJcblxyXG4udmlzaW9uLWxvc3MtbW9kZXJhdGUge1xyXG4gIGZpbHRlcjogYmx1cigxcHgpO1xyXG59XHJcblxyXG4udmlzaW9uLWxvc3Mtc2V2ZXJlIHtcclxuICBmaWx0ZXI6IGJsdXIoMTBweCk7XHJcbn1cclxuXHJcbi52aXNpb24tYmxpbmRuZXNzIHtcclxuICBmaWx0ZXI6IGJyaWdodG5lc3MoMCk7XHJcbn0iXX0= */
