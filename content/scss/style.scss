@@ -1,4 +1,4 @@
-// Customize version of AcceCSS https://lukyvj.github.io/accecss/
+// Customize version of AcceCSS https://lukyvj.github.ioaccecss/
 
 $path-to-accecss-filter: '';
 $type-map: (
@@ -14,7 +14,7 @@ $type-map: (
 
 @each $num, $type in $type-map {
   &.#{$type}{
-   filter: url('#{$path-to-accecss-filter}/accecss-filters.svg##{$type}') grayscale(0) !important;
+   filter: url('#{$path-to-accecss-filter}accecss-filters.svg##{$type}') grayscale(0) !important;
  }
 }
 

@@ -1,41 +1,41 @@
 .protanopia {
-  -webkit-filter: url("/accecss-filters.svg#protanopia") grayscale(0) !important;
-          filter: url("/accecss-filters.svg#protanopia") grayscale(0) !important;
+  -webkit-filter: url("accecss-filters.svg#protanopia") grayscale(0) !important;
+          filter: url("accecss-filters.svg#protanopia") grayscale(0) !important;
 }
 
 .protanomaly {
-  -webkit-filter: url("/accecss-filters.svg#protanomaly") grayscale(0) !important;
-          filter: url("/accecss-filters.svg#protanomaly") grayscale(0) !important;
+  -webkit-filter: url("accecss-filters.svg#protanomaly") grayscale(0) !important;
+          filter: url("accecss-filters.svg#protanomaly") grayscale(0) !important;
 }
 
 .deuteranopia {
-  -webkit-filter: url("/accecss-filters.svg#deuteranopia") grayscale(0) !important;
-          filter: url("/accecss-filters.svg#deuteranopia") grayscale(0) !important;
+  -webkit-filter: url("accecss-filters.svg#deuteranopia") grayscale(0) !important;
+          filter: url("accecss-filters.svg#deuteranopia") grayscale(0) !important;
 }
 
 .deuteranomaly {
-  -webkit-filter: url("/accecss-filters.svg#deuteranomaly") grayscale(0) !important;
-          filter: url("/accecss-filters.svg#deuteranomaly") grayscale(0) !important;
+  -webkit-filter: url("accecss-filters.svg#deuteranomaly") grayscale(0) !important;
+          filter: url("accecss-filters.svg#deuteranomaly") grayscale(0) !important;
 }
 
 .tritanopia {
-  -webkit-filter: url("/accecss-filters.svg#tritanopia") grayscale(0) !important;
-          filter: url("/accecss-filters.svg#tritanopia") grayscale(0) !important;
+  -webkit-filter: url("accecss-filters.svg#tritanopia") grayscale(0) !important;
+          filter: url("accecss-filters.svg#tritanopia") grayscale(0) !important;
 }
 
 .tritanomaly {
-  -webkit-filter: url("/accecss-filters.svg#tritanomaly") grayscale(0) !important;
-          filter: url("/accecss-filters.svg#tritanomaly") grayscale(0) !important;
+  -webkit-filter: url("accecss-filters.svg#tritanomaly") grayscale(0) !important;
+          filter: url("accecss-filters.svg#tritanomaly") grayscale(0) !important;
 }
 
 .achromatopsia {
-  -webkit-filter: url("/accecss-filters.svg#achromatopsia") grayscale(0) !important;
-          filter: url("/accecss-filters.svg#achromatopsia") grayscale(0) !important;
+  -webkit-filter: url("accecss-filters.svg#achromatopsia") grayscale(0) !important;
+          filter: url("accecss-filters.svg#achromatopsia") grayscale(0) !important;
 }
 
 .achromatomaly {
-  -webkit-filter: url("/accecss-filters.svg#achromatomaly") grayscale(0) !important;
-          filter: url("/accecss-filters.svg#achromatomaly") grayscale(0) !important;
+  -webkit-filter: url("accecss-filters.svg#achromatomaly") grayscale(0) !important;
+          filter: url("accecss-filters.svg#achromatomaly") grayscale(0) !important;
 }
 
 .grayscale {

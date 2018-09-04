@@ -1,0 +1,14 @@
+{
+  "name": "A11Y - Color blindness empathy test",
+  "version": "1.0",
+  "description": "Empathy test for color blindness and visual impairment",
+  "permissions": ["storage"],
+  "background": {
+    "scripts": ["toggleTest.js"],
+    "persistent": false
+  },
+  "page_action": {
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 2
+}
