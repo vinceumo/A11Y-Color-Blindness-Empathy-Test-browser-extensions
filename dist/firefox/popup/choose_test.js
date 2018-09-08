@@ -1,3 +1,7 @@
+const testsCSS = `
+.protanopia{-webkit-filter:url(accecss-filters.svg#protanopia) grayscale(0)!important;filter:url(accecss-filters.svg#protanopia) grayscale(0)!important}.protanomaly{-webkit-filter:url(accecss-filters.svg#protanomaly) grayscale(0)!important;filter:url(accecss-filters.svg#protanomaly) grayscale(0)!important}.deuteranopia{-webkit-filter:url(accecss-filters.svg#deuteranopia) grayscale(0)!important;filter:url(accecss-filters.svg#deuteranopia) grayscale(0)!important}.deuteranomaly{-webkit-filter:url(accecss-filters.svg#deuteranomaly) grayscale(0)!important;filter:url(accecss-filters.svg#deuteranomaly) grayscale(0)!important}.tritanopia{-webkit-filter:url(accecss-filters.svg#tritanopia) grayscale(0)!important;filter:url(accecss-filters.svg#tritanopia) grayscale(0)!important}.tritanomaly{-webkit-filter:url(accecss-filters.svg#tritanomaly) grayscale(0)!important;filter:url(accecss-filters.svg#tritanomaly) grayscale(0)!important}.achromatopsia{-webkit-filter:url(accecss-filters.svg#achromatopsia) grayscale(0)!important;filter:url(accecss-filters.svg#achromatopsia) grayscale(0)!important}.achromatomaly{-webkit-filter:url(accecss-filters.svg#achromatomaly) grayscale(0)!important;filter:url(accecss-filters.svg#achromatomaly) grayscale(0)!important}.grayscale{-webkit-filter:grayscale(100%);filter:grayscale(100%)}.vision-loss-moderate{-webkit-filter:blur(1px);filter:blur(1px)}.vision-loss-severe{-webkit-filter:blur(10px);filter:blur(10px)}.vision-blindness{-webkit-filter:brightness(0);filter:brightness(0)}
+`;
+
 function listenForClicks() {
   const labels = document.querySelectorAll("label");
 
@@ -10,6 +14,17 @@ function listenForClicks() {
     currentLabel.addEventListener("click", () => {
       console.log({ testType });
       console.log({ testClass });
+
+      function toggleTests(tabs) {
+        browser.tabs.insertCSS({code: testsCSS}).then(() => {
+          browser.tabs.sendMessage(tabs[0].id, {
+            command: "toggleTests",
+            testType: testType,
+            testClass: testClass
+          });
+        });
+      }
+      
     });
   });
 }
