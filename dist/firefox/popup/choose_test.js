@@ -16,7 +16,7 @@ function listenForClicks() {
       console.log({ testClass });
 
       function toggleTests(tabs) {
-        browser.tabs.insertCSS({code: testsCSS}).then(() => {
+        browser.tabs.insertCSS({ code: testsCSS }).then(() => {
           browser.tabs.sendMessage(tabs[0].id, {
             command: "toggleTests",
             testType: testType,
@@ -24,12 +24,44 @@ function listenForClicks() {
           });
         });
       }
-      
+
+      function reset(tabs) {
+        browser.tabs.removeCSS({ code: testsCSS }).then(() => {
+          browser.tabs.sendMessage(tabs[0].id, {
+            command: "reset",
+            testType: testType
+          });
+        });
+      }
+
+      function reportError(error) {
+        console.error(`Could not test: ${error}`);
+      }
+
+      if (testClass != "reset") {
+        browser.tabs
+          .query({ active: true, currentWindow: true })
+          .then(toggleTests)
+          .catch(reportError);
+      } else {
+        browser.tabs
+          .query({ active: true, currentWindow: true })
+          .then(reset)
+          .catch(reportError);
+      }
     });
   });
 }
 
-listenForClicks();
+function reportExecuteScriptError(error) {
+  document.querySelector("#popup-content").classList.add("hidden");
+  document.querySelector("#error-content").classList.remove("hidden");
+  console.error(`Failed to execute content script: ${error.message}`);
+}
+
+browser.tabs.executeScript({file: "/content_scripts/runTest.js"})
+.then(listenForClicks)
+.catch(reportExecuteScriptError);
 
 // /**
 //  * CSS to hide everything on the page,

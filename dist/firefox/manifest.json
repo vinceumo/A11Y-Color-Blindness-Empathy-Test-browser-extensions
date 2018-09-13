@@ -29,8 +29,7 @@
   },
 
   "web_accessible_resources": [
-    "beasts/frog.jpg",
-    "beasts/turtle.jpg",
-    "beasts/snake.jpg"
+    "access/access-filters.svg",
+    "access/style.min.css"
   ]
 }

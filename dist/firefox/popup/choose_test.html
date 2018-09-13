@@ -1,54 +1,47 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="choose_test.css"/>
-    <style>
-      .is-active {
-        background: tomato;
-      }
-    </style>
-  </head>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="choose_test.css" />
+  <style>
+    .is-active {
+      background: tomato;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
 
 <body>
-  <!-- <div id="popup-content">
-    <div class="button beast"></div>
-    <div class="button beast">Turtle</div>
-    <div class="button beast">Snake</div>
-    <div class="button reset">Reset</div>
-  </div> -->
-  <!-- <ul id="popup-content">  
-    <li><button class="button beast" value="frog">Frog</button></li>
-    <li><button class="button beast" value="turtle">Turtle</button></li>
-    <li><button class="button beast" value="snake">Snake</button></li>
-    <li><button class="button reset" value="Reset">Reset</button></li>
-  </ul> -->
-
-  <h2>Color blindness tests:</h2>
-  <ul>
-    <li><label><input type="radio" name="colorBlindness" value="" checked>None</label></li>
-    <li><label><input type="radio" name="colorBlindness" value="protanopia">Protanopia</label></li>
-    <li><label><input type="radio" name="colorBlindness" value="protanomaly">Protanomaly</label></li>
-    <li><label><input type="radio" name="colorBlindness" value="deuteranopia">Deuteranopia</label></li>
-    <li><label><input type="radio" name="colorBlindness" value="deuteranomaly">Deuteranomaly</label></li>
-    <li><label><input type="radio" name="colorBlindness" value="tritanopia">Tritanopia</label></li>
-    <li><label><input type="radio" name="colorBlindness" value="tritanomaly">Tritanomaly</label></li>
-    <li><label><input type="radio" name="colorBlindness" value="achromatopsia">Achromatopsia</label></li>
-    <li><label><input type="radio" name="colorBlindness" value="achromatomaly">Achromatomaly</label></li>
-    <li><label><input type="radio" name="colorBlindness" value="grayscale">Grayscale</label></li>
-  </ul>
-
-  <h2>Vision loss tests:</h2>
-  <ul>
-    <li><label><input type="radio" name="vision" value="" checked>None</label></li>
-    <li><label><input type="radio" name="vision" value="vision-loss-moderate">moderate vision loss</label></li>
-    <li><label><input type="radio" name="vision" value="vision-loss-severe">severe vision loss</label></li>
-    <li><label><input type="radio" name="vision" value="vision-blindness">blindness</label></li>
-  </ul>
-
+  <div id="popup-content">
+    <h2>Color blindness tests:</h2>
+    <ul>
+      <li><label><input type="radio" name="colorBlindness" value="reset" checked>None</label></li>
+      <li><label><input type="radio" name="colorBlindness" value="protanopia">Protanopia</label></li>
+      <li><label><input type="radio" name="colorBlindness" value="protanomaly">Protanomaly</label></li>
+      <li><label><input type="radio" name="colorBlindness" value="deuteranopia">Deuteranopia</label></li>
+      <li><label><input type="radio" name="colorBlindness" value="deuteranomaly">Deuteranomaly</label></li>
+      <li><label><input type="radio" name="colorBlindness" value="tritanopia">Tritanopia</label></li>
+      <li><label><input type="radio" name="colorBlindness" value="tritanomaly">Tritanomaly</label></li>
+      <li><label><input type="radio" name="colorBlindness" value="achromatopsia">Achromatopsia</label></li>
+      <li><label><input type="radio" name="colorBlindness" value="achromatomaly">Achromatomaly</label></li>
+      <li><label><input type="radio" name="colorBlindness" value="grayscale">Grayscale</label></li>
+    </ul>
+    <h2>Vision loss tests:</h2>
+    <ul>
+      <li><label><input type="radio" name="vision" value="reset" checked>None</label></li>
+      <li><label><input type="radio" name="vision" value="vision-loss-moderate">Moderate vision loss</label></li>
+      <li><label><input type="radio" name="vision" value="vision-loss-severe">Severe vision loss</label></li>
+      <li><label><input type="radio" name="vision" value="vision-blindness">Blindness</label></li>
+    </ul>
+  </div>
   <div id="error-content" class="hidden">
-    <p>Can't beastify this web page.</p><p>Try a different page.</p>
+    <p>Can't test this web page.</p>
+    <p>Try a different page.</p>
   </div>
   <script src="choose_test.js"></script>
 </body>
