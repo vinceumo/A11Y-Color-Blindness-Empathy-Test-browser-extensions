@@ -1,35 +1,56 @@
-// Customize version of AcceCSS https://lukyvj.github.ioaccecss/
-
-$path-to-accecss-filter: '';
+$path-to-accecss-filter: "";
 $type-map: (
-  1: 'protanopia' ,
-  2: 'protanomaly' ,
-  3: 'deuteranopia' ,
-  4: 'deuteranomaly' ,
-  5: 'tritanopia' ,
-  6: 'tritanomaly' ,
-  7: 'achromatopsia' ,
-  8: 'achromatomaly' 
+  1: "protanopia",
+  2: "protanomaly",
+  3: "deuteranopia",
+  4: "deuteranomaly",
+  5: "tritanopia",
+  6: "tritanomaly",
+  7: "achromatopsia",
+  8: "achromatomaly"
 );
 
+// Color blindness
+
 @each $num, $type in $type-map {
-  &.#{$type}{
-   filter: url('#{$path-to-accecss-filter}accecss-filters.svg##{$type}') grayscale(0) !important;
- }
+  &.#{$type} {
+    filter: url("##{$type}") grayscale(0) !important;
+  }
 }
 
-.grayscale{
-  filter: grayscale(100%);
+.grayscale {
+  filter: grayscale(100%) !important;
 }
+
+// Vision Loss
 
 .vision-loss-moderate {
-  filter: blur(1px);
+  > * {
+    filter: blur(1px) !important;
+  }
 }
 
 .vision-loss-severe {
-  filter: blur(10px);
+  > * {
+    filter: blur(10px) !important;
+  }
 }
 
 .vision-blindness {
-  filter: brightness(0);
+  > * {
+    background-color: #fff !important;
+    filter: brightness(0) !important;
+  }
+}
+
+#access-filter {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  width: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  word-wrap: normal !important;
 }

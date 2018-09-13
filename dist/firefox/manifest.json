@@ -24,10 +24,5 @@
     },
     "default_title": "A11Y - Color blindness empathy test",
     "default_popup": "popup/choose_test.html"
-  },
-
-  "web_accessible_resources": [
-    "access/access-filters.svg",
-    "access/style.min.css"
-  ]
+  }
 }
