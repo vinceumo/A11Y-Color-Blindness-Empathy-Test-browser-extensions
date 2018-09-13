@@ -1,49 +1,52 @@
 (function() {
-  /**
-   * Check and set a global guard variable.
-   * If this content script is injected into the same page again,
-   * it will do nothing next time.
-   */
   if (window.hasRun) {
     return;
   }
   window.hasRun = true;
 
-  /**
-   * Given a URL to a beast image, remove all existing beasts, then
-   * create and style an IMG node pointing to
-   * that image, then insert the node into the document.
-   */
-  function insertBeast(beastURL) {
-    removeExistingBeasts();
-    let beastImage = document.createElement("img");
-    beastImage.setAttribute("src", beastURL);
-    beastImage.style.height = "100vh";
-    beastImage.className = "beastify-image";
-    document.body.appendChild(beastImage);
-    document.html.classList.add('test');
+  let hasInsertedFiles = false;
+  const colorBlindnessClasses = ["protanopia", "protanomaly", "deuteranopia", "deuteranomaly", "tritanopia", "tritanomaly", "achromatopsia", "achromatomaly", "grayscale"];
+  const visionClasses = ["vision-loss-moderate", "vision-loss-severe", "vision-blindness"];
+
+  function toggleTest(testType, testClass) {
+    if(!hasInsertedFiles) {
+      insertFiles();
+      hasInsertedFiles = true;
+    }
+
+    removeTests(testType);
+    document.body.classList.add(testClass);
   }
 
-  /**
-   * Remove every beast from the page.
-   */
-  function removeExistingBeasts() {
-    let existingBeasts = document.querySelectorAll(".beastify-image");
-    for (let beast of existingBeasts) {
-      beast.remove();
+  function insertFiles() {
+    const svgFilter = document.createElement("img");
+    svgFilter.setAttribute("src", "access/access-filters.svg");
+    document.body.appendChild(svgFilter);
+
+    const accessCSS = document.createElement("link");
+    accessCSS.setAttribute("rel", "stylesheet");
+    accessCSS.setAttribute("type", "text/css");
+    accessCSS.setAttribute("href", "access/access/style.min.css");
+    document.head.appendChild(accessCSS);
+  }
+
+  function removeTests(testType) {
+    if(testType == "vision") {
+      for (let i = 0; i < visionClasses.length; i++) {
+        document.body.classList.remove(visionClasses[i]);
+      }
+    } else if (testType == "colorBlindness") {
+      for (let i = 0; i < colorBlindnessClasses.length; i++) {
+        document.body.classList.remove(colorBlindnessClasses[i]);
+      }
     }
   }
 
-  /**
-   * Listen for messages from the background script.
-   * Call "beastify()" or "reset()".
-  */
   browser.runtime.onMessage.addListener((message) => {
-    if (message.command === "beastify") {
-      insertBeast(message.beastURL);
-    } else if (message.command === "reset") {
-      removeExistingBeasts();
+    if (message.command !== "reset") {
+      toggleTest(message.testType, message.testClass);
+    } else {
+      removeTests(message.testType);
     }
   });
-
 })();

@@ -13,9 +13,7 @@
     "128": "icons/icon128.png"
   },
 
-  "permissions": [
-    "activeTab"
-  ],
+  "permissions": ["activeTab"],
 
   "browser_action": {
     "default_icon": {
