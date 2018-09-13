@@ -8,33 +8,39 @@
 </head>
 
 <body>
-  <div id="popup-content">
-    <h2>Color blindness tests:</h2>
-    <ul>
-      <li><label><input type="radio" name="colorBlindness" value="reset" checked>None</label></li>
-      <li><label><input type="radio" name="colorBlindness" value="protanopia">Protanopia</label></li>
-      <li><label><input type="radio" name="colorBlindness" value="protanomaly">Protanomaly</label></li>
-      <li><label><input type="radio" name="colorBlindness" value="deuteranopia">Deuteranopia</label></li>
-      <li><label><input type="radio" name="colorBlindness" value="deuteranomaly">Deuteranomaly</label></li>
-      <li><label><input type="radio" name="colorBlindness" value="tritanopia">Tritanopia</label></li>
-      <li><label><input type="radio" name="colorBlindness" value="tritanomaly">Tritanomaly</label></li>
-      <li><label><input type="radio" name="colorBlindness" value="achromatopsia">Achromatopsia</label></li>
-      <li><label><input type="radio" name="colorBlindness" value="achromatomaly">Achromatomaly</label></li>
-      <li><label><input type="radio" name="colorBlindness" value="grayscale">Grayscale</label></li>
-    </ul>
-    
-    <h2>Vision loss tests:</h2>
-    <ul>
-      <li><label><input type="radio" name="vision" value="reset" checked>None</label></li>
-      <li><label><input type="radio" name="vision" value="vision-loss-moderate">Moderate vision loss</label></li>
-      <li><label><input type="radio" name="vision" value="vision-loss-severe">Severe vision loss</label></li>
-      <li><label><input type="radio" name="vision" value="vision-blindness">Blindness</label></li>
-    </ul>
-  </div>
-  <div id="error-content" class="hidden">
-    <p>Can't test this web page.</p>
-    <p>Try a different page.</p>
-  </div>
+  <main>
+      <div id="popup-content">
+          <h2 class="has-mt-0">Color blindness tests:</h2>
+          <ul class="test-picker">
+            <li><label><input type="radio" name="colorBlindness" value="reset" checked>None</label></li>
+            <li><label><input type="radio" name="colorBlindness" value="protanopia">Protanopia</label></li>
+            <li><label><input type="radio" name="colorBlindness" value="protanomaly">Protanomaly</label></li>
+            <li><label><input type="radio" name="colorBlindness" value="deuteranopia">Deuteranopia</label></li>
+            <li><label><input type="radio" name="colorBlindness" value="deuteranomaly">Deuteranomaly</label></li>
+            <li><label><input type="radio" name="colorBlindness" value="tritanopia">Tritanopia</label></li>
+            <li><label><input type="radio" name="colorBlindness" value="tritanomaly">Tritanomaly</label></li>
+            <li><label><input type="radio" name="colorBlindness" value="achromatopsia">Achromatopsia</label></li>
+            <li><label><input type="radio" name="colorBlindness" value="achromatomaly">Achromatomaly</label></li>
+            <li><label><input type="radio" name="colorBlindness" value="grayscale">Grayscale</label></li>
+          </ul>
+          
+          <h2>Vision loss tests:</h2>
+          <ul class="test-picker">
+            <li><label><input type="radio" name="vision" value="reset" checked>None</label></li>
+            <li><label><input type="radio" name="vision" value="vision-loss-moderate">Moderate vision loss</label></li>
+            <li><label><input type="radio" name="vision" value="vision-loss-severe">Severe vision loss</label></li>
+            <li><label><input type="radio" name="vision" value="vision-blindness">Blindness</label></li>
+          </ul>
+        </div>
+        <div id="error-content" class="hidden">
+          <p>Can't test this web page.<br />
+            Try a different page.</p>
+        </div>
+  </main>
+  <footer>
+      <p><a href="https://vinceumo.github.io/A11Y-Color-Blindness-Empathy-Test/">A11Y - Color blindness empathy test</a></p>
+  </footer>
+  
   <script src="choose_test.js"></script>
 </body>
 
