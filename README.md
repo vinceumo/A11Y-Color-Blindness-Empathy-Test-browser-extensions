@@ -6,5 +6,5 @@ Empathy test for color blindness and visual impairment. This add-on emulates 8 t
 - [Chrome](https://chrome.google.com/webstore/detail/a11y-color-blindness-empa/idphhflanmeibmjgaciaadkmjebljhcc)
 - [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/a11y-color-blindness-test/) 
 
-![screenshot](dist/img/c-screenshot.jpg)
-![screenshot2](dist/img/c-screenshot2.jpg)
+![screenshot](dist/img/c-screenshot.jpg?raw=true)
+![screenshot2](dist/img/c-screenshot2.jpg?raw=true)
