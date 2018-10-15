@@ -25,19 +25,19 @@ $type-map: (
 // Vision Loss
 
 .vision-loss-moderate {
-  > * {
+  body > * {
     filter: blur(1px) !important;
   }
 }
 
 .vision-loss-severe {
-  > * {
+  body > * {
     filter: blur(10px) !important;
   }
 }
 
 .vision-blindness {
-  > * {
+  body > * {
     background-color: #fff !important;
     filter: brightness(0) !important;
   }

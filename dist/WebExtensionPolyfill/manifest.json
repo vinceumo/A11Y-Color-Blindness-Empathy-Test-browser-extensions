@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "A11Y - Color blindness empathy test",
-  "version": "1.0",
+  "version": "1.0.1",
   "description": "Empathy test for color blindness and visual impairment",
   "author": "Vincent Humeau",
   "homepage_url": "https://github.com/vinceumo/A11Y-Color-Blindness-Empathy-Test",
